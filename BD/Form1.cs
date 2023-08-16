@@ -44,11 +44,9 @@ namespace BD
                     con.Open(); // tenta abrir a conexão
                     SqlCommand cmd = new SqlCommand(sqlSelect, con);
                     SqlDataReader sdr = cmd.ExecuteReader();
-                    lstClientes.Items.Clear();
-                    while (sdr.Read())
+                     while (sdr.Read())
                     {
                         Console.WriteLine(sdr["nome"] + " | " + sdr["cpf_cnpj"] + "\n");
-                        lstClientes.Items.Add(sdr["nome"]);
                     }
                 }
             }
