@@ -32,12 +32,12 @@ namespace BD
             this.button1 = new System.Windows.Forms.Button();
             this.lstClientes = new System.Windows.Forms.ListBox();
             this.grpDadosCliente = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.idCliente = new System.Windows.Forms.Label();
-            this.Nome = new System.Windows.Forms.Label();
-            this.cnpj_cpf = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCnpjCpf = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.cnpj_cpf = new System.Windows.Forms.Label();
+            this.Nome = new System.Windows.Forms.Label();
+            this.idCliente = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpDadosCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,10 +54,12 @@ namespace BD
             // 
             // lstClientes
             // 
+            this.lstClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstClientes.FormattingEnabled = true;
+            this.lstClientes.ItemHeight = 24;
             this.lstClientes.Location = new System.Drawing.Point(12, 114);
             this.lstClientes.Name = "lstClientes";
-            this.lstClientes.Size = new System.Drawing.Size(266, 173);
+            this.lstClientes.Size = new System.Drawing.Size(266, 172);
             this.lstClientes.TabIndex = 1;
             this.lstClientes.SelectedIndexChanged += new System.EventHandler(this.cmdSelecionou);
             // 
@@ -77,31 +79,19 @@ namespace BD
             this.grpDadosCliente.TabIndex = 2;
             this.grpDadosCliente.TabStop = false;
             // 
-            // label1
+            // txtCnpjCpf
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID CLIENTE:";
+            this.txtCnpjCpf.Location = new System.Drawing.Point(6, 134);
+            this.txtCnpjCpf.Name = "txtCnpjCpf";
+            this.txtCnpjCpf.Size = new System.Drawing.Size(209, 29);
+            this.txtCnpjCpf.TabIndex = 5;
             // 
-            // idCliente
+            // txtNome
             // 
-            this.idCliente.AutoSize = true;
-            this.idCliente.Location = new System.Drawing.Point(129, 20);
-            this.idCliente.Name = "idCliente";
-            this.idCliente.Size = new System.Drawing.Size(0, 24);
-            this.idCliente.TabIndex = 1;
-            // 
-            // Nome
-            // 
-            this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(6, 44);
-            this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(67, 24);
-            this.Nome.TabIndex = 2;
-            this.Nome.Text = "Nome:";
+            this.txtNome.Location = new System.Drawing.Point(10, 71);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(385, 29);
+            this.txtNome.TabIndex = 4;
             // 
             // cnpj_cpf
             // 
@@ -112,19 +102,31 @@ namespace BD
             this.cnpj_cpf.TabIndex = 3;
             this.cnpj_cpf.Text = "CNPJ / CPF:";
             // 
-            // txtNome
+            // Nome
             // 
-            this.txtNome.Location = new System.Drawing.Point(10, 71);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(385, 29);
-            this.txtNome.TabIndex = 4;
+            this.Nome.AutoSize = true;
+            this.Nome.Location = new System.Drawing.Point(6, 44);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(67, 24);
+            this.Nome.TabIndex = 2;
+            this.Nome.Text = "Nome:";
             // 
-            // txtCnpjCpf
+            // idCliente
             // 
-            this.txtCnpjCpf.Location = new System.Drawing.Point(6, 134);
-            this.txtCnpjCpf.Name = "txtCnpjCpf";
-            this.txtCnpjCpf.Size = new System.Drawing.Size(209, 29);
-            this.txtCnpjCpf.TabIndex = 5;
+            this.idCliente.AutoSize = true;
+            this.idCliente.Location = new System.Drawing.Point(129, 20);
+            this.idCliente.Name = "idCliente";
+            this.idCliente.Size = new System.Drawing.Size(0, 24);
+            this.idCliente.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID CLIENTE:";
             // 
             // frmCliente
             // 
